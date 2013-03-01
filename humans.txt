@@ -1,0 +1,11 @@
+# humanstxt.org/
+# DavidHund.com is the personal weblog of David Hund
+# It contains articles related to Web development
+
+# There's really only me ;)
+
+- David Hund
+- TWI: @valuedstandards
+- ADN: @davidhund
+- WEB: http://valuedstandards.com
+- EML: david <dot> hund <at-thingie> gmail

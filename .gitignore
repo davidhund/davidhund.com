@@ -1,0 +1,8 @@
+# Ignore the following files. Biatch
+
+# gh-pages needs no _site — it creates it
+_site/
+.sass-cache
+.DS_Store
+*.tmp
+*.sql
