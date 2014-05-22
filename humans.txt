@@ -1,0 +1,13 @@
+# humanstxt.org/
+
+# TEAM
+
+	Your Name - Role
+
+# THANKS
+
+    Peepz
+
+# TECHNOLOGY COLOPHON
+
+	HTML5, CSS3 (Why are we even including this ;)
