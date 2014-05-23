@@ -1,3 +1,0 @@
-[submodule "static/scss"]
-	path = static/scss
-	url = git@github.com:davidhund/dh-kickstart-style.git
