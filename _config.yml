@@ -31,7 +31,7 @@ exclude:
 - 'Gemfile'
 - 'Gemfile.lock'
 
-include:     ['.htaccess']
+# include:     ['.htaccess']
 keep_files:  ['.git','.svn']
 permalink:   pretty
 
