@@ -1,0 +1,25 @@
+{% comment %}
+<!--
+From: https://github.com/plusjade/jekyll-bootstrap/blob/master/_includes/JB/pages_list 
+Usage:
+    <ul>
+        {% assign pages_list = site.pages %}  
+        {% include pages_list %}
+    </ul>
+-->
+{% endcomment %}
+{% for node in pages_list %}
+    {% if node.title != null %}
+        {% if group == null or group == node.group %}
+            {% if node.url != '/' %}
+                {% if page.url == node.url %}
+                    <li class="is-active"><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+                {% else %}
+                    <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+{% assign pages_list = nil %}
+{% assign group = nil %}

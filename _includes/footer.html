@@ -1,0 +1,25 @@
+		<footer role="contentinfo">
+			<div class="grid">
+				<div class="grid__unit l-1of2">
+					<div class="media">
+						<div class="media__img">
+							<img src="http://valuedstandards.com/mugshot.jpg" alt="" />
+						</div>
+						<div class="media__body">
+							<div class="vcard">By
+								<address class="author">
+									<span class="fn"><a href="http://valuedstandards.com">{{site.author}}</a></span>
+								</address>
+							</div>
+							<p>
+							Follow me <a href="http://twitter.com/valuedstandards">@valuedstandards</a><br/>
+							Fork off at <a href="https://github.com/davidhund">Github/davidhund</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="grid__unit l-1of2">
+					<p>This blog is far from finished. There's a lot I'd like to work on. Such as comments and a RSS feed.</p>
+				</div>
+			</div>
+			<small>&copy; {{ site.time | date: "%Y" }}&mdash;{{ site.time | date: "%Y" | plus:'1' }} {{site.author}}.</small>
+		</footer>

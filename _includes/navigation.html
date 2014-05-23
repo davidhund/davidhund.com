@@ -1,0 +1,9 @@
+{% if site.pages.size > 1 %}
+		<nav id="site-nav" role="navigation">
+			<h3>See also</h3>
+			<ul class="linklist">
+				{% assign pages_list = site.pages %}  
+				{% include pages_list.html %}
+			</ul>
+		</nav>
+{% endif %}

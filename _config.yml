@@ -1,0 +1,50 @@
+# Some defaults. Commented are default values for some settings you might want to change
+# Check: https://github.com/jekyll/jekyll/blob/df8458275de4dc3d0f9b92c5247ff20832d1cc8e/lib/jekyll/configuration.rb
+
+# = My Custom Settings:
+author: 'David Hund'
+site_name: 'David Hund'
+site_domain: 'http://192.168.178.20:3002/'
+ga_code: 'UA-XXXXX-X'
+
+# = Jekyll (Default) Settings:
+source:      .
+destination: ./_site
+exclude:
+- '.DS_Store'
+- 'node_modules'
+- 'bower_components'
+- '*.sql'
+- '*.sass'
+- '*.scss'
+- '.sass-cache'
+- 'gulp*'
+- 'grunt*'
+- 'package.json'
+- 'README.md'
+- 'HOWTO.md'
+- 'EXAMPLE.CNAME'
+include:     ['.htaccess']
+keep_files:  ['.git','.svn']
+permalink:   pretty
+
+relative_permalinks: true
+
+show_drafts: false
+
+# Change baseurl to /gh-subfolder when publishing on gh-pages.
+# See: _config-gh-pages.yml
+baseurl:     ''
+url: http://davidhund.com
+
+# url: http://localhost:4000
+# host: 0.0.0.0
+# port: 4000
+# future:      true
+# safe:        false
+# plugins:     ./_plugins
+# lsi:         false
+# pygments:    false
+markdown:    kramdown
+kramdown:
+  input: GFM

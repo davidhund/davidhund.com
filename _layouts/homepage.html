@@ -1,0 +1,73 @@
+{% include head.html %}
+{% include header-home.html %}
+		<main role="main" class="hfeed xboxed">
+
+			{% comment %} ** LATEST POST ** {% endcomment %}
+			{% for post in site.posts offset: 0 limit: 1 %}
+			<article class="hentry--spotlight hentry" itemprop="blogPost" itemtype="http://schema.org/BlogPosting" itemscope>
+				<header>
+					<h2><a href="{{post.url}}" itemprop="name headline">{{ post.title }}</a></h2>
+					<p class="hentry__meta">
+						<time itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ post.date | date_to_string }}</time>
+						<span class="post-author" rel="contact author">{% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif %}</span>
+					</p>
+				</header>
+				<div itemprop="description articleBody">
+					{% if post.summary %}
+					{{ post.summary | markdownify }}
+					<p><a href="{{post.url}}" itemprop="url" class="lnk-more">Continue</a></p>
+					{% else %}
+					<p>{{ post.excerpt | strip_html }}&hellip;<br /><a href="{{post.url}}" itemprop="url" class="lnk-more">Continue</a></p>
+					{% endif %}
+				</div>
+			</article>
+			{% endfor %}
+		</main>
+		<div class="grid">
+			
+			<div class="grid__unit l-primary">
+				{% comment %} ** REST OF LATEST 10 POST ** {% endcomment %}
+				{% for post in site.posts offset: 1 limit: 9 %}
+				<article class="hentry" itemprop="blogPost" itemtype="http://schema.org/BlogPosting" itemscope>
+					<header>
+						<h2><a href="{{post.url}}" itemprop="name headline">{{ post.title }}</a></h2>
+						<p class="hentry__meta">
+							<time itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ post.date | date_to_string }}</time>
+							<span class="post-author" rel="contact author">{% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif %}</span>
+						</p>
+					</header>
+					<div itemprop="description articleBody">
+						{% if post.summary %}
+						{{ post.summary | markdownify }}
+						<p><a href="{{post.url}}" itemprop="url" class="lnk-more">Go to the article</a></p>
+						{% else %}
+						<p>{{ post.excerpt | strip_html }}&hellip;<br /><a href="{{post.url}}" itemprop="url" class="lnk-more">Go to the article</a></p>
+						{% endif %}
+					</div>
+				</article>
+				{% endfor %}
+			</div>
+
+			<div class="grid__unit l-secondary">
+
+				<nav role="navigation">
+					<h2>Archives</h2>
+					<ul class="linklist">
+					{% comment %}set OFFSET to amount-posts-on-homepage!{% endcomment %}
+					{% for node in site.posts offset: 0 limit: 10 %}
+					    {% if node.title != null %}
+				            {% if page.url == node.url %}
+				                <li class="is-active"><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a> [active]</li>
+				            {% else %}
+				                <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+				            {% endif %}
+					    {% endif %}
+					{% endfor %}
+					</ul>
+				</nav>
+
+			</div>
+
+		</div>
+{% include footer.html %}
+{% include foot.html %}
