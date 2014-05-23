@@ -24,6 +24,9 @@ exclude:
 - 'README.md'
 - 'HOWTO.md'
 - 'EXAMPLE.CNAME'
+- 'Gemfile'
+- 'Gemfile.lock'
+
 include:     ['.htaccess']
 keep_files:  ['.git','.svn']
 permalink:   pretty

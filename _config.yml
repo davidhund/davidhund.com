@@ -5,6 +5,7 @@
 # https://help.github.com/articles/repository-metadata-on-github-pages
 
 # = My Custom Settings:
+author: 'David Hund'
 site_name: 'David Hund'
 site_domain: 'http://davidhund.com'
 ga_code: 'UA-XXXXX-X'
@@ -27,6 +28,9 @@ exclude:
 - 'README.md'
 - 'HOWTO.md'
 - 'EXAMPLE.CNAME'
+- 'Gemfile'
+- 'Gemfile.lock'
+
 include:     ['.htaccess']
 keep_files:  ['.git','.svn']
 permalink:   pretty

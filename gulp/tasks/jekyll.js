@@ -9,6 +9,6 @@ gulp.task('jekyll', function() {
 	// Running with gh-pages specific Jekyll
 	// https://help.github.com/articles/using-jekyll-with-pages#installing-jekyll
 	// $> bundle exec jekyll serve
-	require('child_process').spawn('bundle', ['exec jekyll build'], {stdio: 'inherit'});
+	require('child_process').spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'});
 
 });
