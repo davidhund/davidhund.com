@@ -7,7 +7,7 @@ var browserSync  = require('browser-sync');
 var paths        = require('../util/paths.js');
 
 gulp.task('sass', function() {
-    return gulp.src(paths.scss+'app.scss')
+    return gulp.src(paths.scss+'style.scss')
         // .pipe(sass({includePaths: ['scss']}))
 		// .pipe(sass({ sourcemap: true, style: 'compact', noCache: true }))
 		.pipe(sass({ style: 'compressed' }))

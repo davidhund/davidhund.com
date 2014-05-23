@@ -10,4 +10,4 @@ Then there is an *explosion* of tools. Sure: this is a challenge also. We all ha
 
 I, for one, am very happy to be working on the front-end.
 
-I would love to hear your thoughts so—in the absence of comments—[reply on Twitter](https://twitter.com/intent/tweet?text=@valuedstandards%20your%20blog%20sucks!) or [submit an issue on Github](https://github.com/davidhund/davidhund.com/issues)
+I would love to hear your thoughts so—in the absence of comments—[reply on Twitter](https://twitter.com/intent/tweet?text=@valuedstandards%20front-end%20development%20blog%20sucks!) or [submit an issue on Github](https://github.com/davidhund/davidhund.com/issues)

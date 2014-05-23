@@ -1,4 +1,13 @@
-{% if site.pages.size > 1 %}
+{% comment %}
+<!--
+site.pages.size > 3
+because we exclude:
+- home
+- robots
+- sitemap
+-->
+{% endcomment %}
+{% if site.pages.size > 3 %}
 		<nav id="site-nav" role="navigation">
 			<h3>See also</h3>
 			<ul class="linklist">
