@@ -8,7 +8,7 @@ Front-end development is booming. I have been doing this for a long time and nev
 
 Then there is an *explosion* of tools. We all have a hard time keeping up. Every week new JavaScript- or OOCSS frameworks and task-runners are popping up promising to make our lives easier.
 
-## Toolsplosion
+## A Simple Site
 
 I am writing this post as [Markdown](http://daringfireball.net/projects/markdown/) in Sublime Text. To the left of my editor window is a browser running this website locally through a [Gulp](http://gulpjs.com) workflow.
 
