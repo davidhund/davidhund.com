@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html class="no-js *debug" lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<title>{% if page.layout == 'homepage' %}{{site.site_name}}{% else %}{{page.title}} | {{site.site_name}}{% endif %}</title>
 
@@ -20,9 +20,10 @@
 		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 
-		<meta name="author" content="David Hund - Valued Standards"/>
-		<link rel="author" href="https://plus.google.com/u/0/117376077765230391641/posts"/>
-		<meta name="description" content="{{page.description}}">
+		<meta name="author" content="David Hund - Valued Standards" />
+		<link rel="author" href="https://plus.google.com/u/0/117376077765230391641/posts" />
+		<meta name="description" content="{{page.description}}" />
+		<link rel="alternate" type="application/rss+xml" title="{{ site.site_name }}" href="{{ site.url }}/feed.xml" />
 
 		<!-- Microsoft’s insane IE9+ pinned site syntax: <msdn.microsoft.com/library/gg131029> -->
 		<meta name="application-name" content="{{site.site_name}}" />
@@ -42,4 +43,4 @@
 		<link rel="stylesheet" href="{{site.baseurl}}/static/js/vendor/prism.css">
 
 	</head>
-	<body>
+	<body itemscope itemtype="http://schema.org/WebPage">

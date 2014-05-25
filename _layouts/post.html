@@ -1,9 +1,9 @@
 {% include head.html %}
 {% include header.html %}
 		<div class="grid">
-				<main role="main" class="grid__unit l-primary">
+				<main role="main" class="grid__unit l-primary" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/BlogPost">
 					<p class="hentry__meta">
-						<time itemprop="datePublished" datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ page.date | date_to_string }}</time>
+						<time datetime="{{ page.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ page.date | date_to_string }}</time>
 						{% for cat in page.categories %}
 						<span class="post-cat">{{page.categories}}</span>
 						{% endfor %}

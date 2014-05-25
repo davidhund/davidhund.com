@@ -5,7 +5,7 @@
 
 	{% comment %}<!-- Site/Blog Indexes -->{% endcomment %}
 	<url>
-		<loc>{{ site.url }}</loc>
+		<loc>{{ site.url }}/</loc>
 		<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>

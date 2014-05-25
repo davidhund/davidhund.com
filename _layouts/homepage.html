@@ -1,10 +1,10 @@
 {% include head.html %}
 {% include header-home.html %}
-		<main role="main" class="hfeed xboxed">
+		<main role="main" class="hfeed" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
 
 			{% comment %} ** LATEST POST ** {% endcomment %}
 			{% for post in site.posts offset: 0 limit: 1 %}
-			<article class="hentry--spotlight hentry" itemprop="blogPost" itemtype="http://schema.org/BlogPosting" itemscope>
+			<article class="hentry--spotlight hentry" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
 				<header>
 					<h2><a href="{{post.url}}" itemprop="name headline">{{ post.title }}</a></h2>
 					<p class="hentry__meta">
@@ -28,7 +28,7 @@
 			<div class="grid__unit l-primary">
 				{% comment %} ** REST OF LATEST 10 POST ** {% endcomment %}
 				{% for post in site.posts offset: 1 limit: 9 %}
-				<article class="hentry" itemprop="blogPost" itemtype="http://schema.org/BlogPosting" itemscope>
+				<article class="hentry" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
 					<header>
 						<h2><a href="{{post.url}}" itemprop="name headline">{{ post.title }}</a></h2>
 						<p class="hentry__meta">

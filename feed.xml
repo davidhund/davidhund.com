@@ -6,7 +6,7 @@ layout: none
 	<channel>
 		<title>{{ 'David Hund: front-end developer' | xml_escape }}</title>
 		<description>{{ 'Thoughts on front-end development. Mostly. By David Hund' | xml_escape }}</description>		
-		<link>{{ site.url }}</link>
+		<link>{{ site.url }}/</link>
 		<atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
 		{% for post in site.posts limit:10 %}
 			<item>
