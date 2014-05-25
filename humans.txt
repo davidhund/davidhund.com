@@ -2,12 +2,18 @@
 
 # TEAM
 
-	Your Name - Role
+	David Hund - Principle Single Responsability
 
 # THANKS
 
-    Peepz
+    Teh Intarwebz. Especially Github, H5BP, Jekyll, etc
 
 # TECHNOLOGY COLOPHON
 
 	HTML5, CSS3 (Why are we even including this ;)
+	Sublime Text
+	Jekyll
+	Sass
+	Gulp
+	Autoprefixer
+	BrowserSync
