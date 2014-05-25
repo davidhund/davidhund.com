@@ -6,10 +6,10 @@
 			{% for post in site.posts offset: 0 limit: 1 %}
 			<article class="hentry--spotlight hentry" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
 				<header>
-					<h2><a href="{{post.url}}" itemprop="name headline">{{ post.title }}</a></h2>
+					<h2 class="entry-title" itemprop="headline"><a href="{{post.url}}" itemprop="name">{{ post.title }}</a></h2>
 					<p class="hentry__meta">
-						<time itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ post.date | date_to_string }}</time>
-						<span class="post-author" rel="contact author">{% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif %}</span>
+						<time class="updated" itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ post.date | date_to_string }}</time>
+						<span class="post-author vcard author" rel="contact author"><span class="fn">{% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif %}</span></span>
 					</p>
 				</header>
 				<div itemprop="description articleBody">
@@ -30,10 +30,10 @@
 				{% for post in site.posts offset: 1 limit: 9 %}
 				<article class="hentry" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
 					<header>
-						<h2><a href="{{post.url}}" itemprop="name headline">{{ post.title }}</a></h2>
+						<h2 class="entry-title" itemprop="headline"><a href="{{post.url}}" itemprop="name">{{ post.title }}</a></h2>
 						<p class="hentry__meta">
-							<time itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ post.date | date_to_string }}</time>
-							<span class="post-author" rel="contact author">{% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif %}</span>
+							<time class="updated" itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}">{{ post.date | date_to_string }}</time>
+							<span class="post-author vcard author" rel="contact author"><span class="fn">{% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif %}</span></span>
 						</p>
 					</header>
 					<div itemprop="description articleBody">
