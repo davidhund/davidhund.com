@@ -13,9 +13,9 @@ module.exports = {
 		"./bower_components/prism/themes/prism.css"
 	],
 	jekyll: [
-		"*.md",
-		"./_includes/*",
-		"./_layouts/*",
-		"./_posts/*"
+		"./*.md",
+		"./_includes/*.html",
+		"./_layouts/*.html",
+		"./_posts/*.md"
 	]
 };

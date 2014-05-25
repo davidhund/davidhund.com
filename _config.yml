@@ -8,7 +8,7 @@
 author: 'David Hund'
 site_name: 'David Hund'
 site_domain: 'http://davidhund.com'
-ga_code: 'UA-XXXXX-X'
+ga_code: 'UA-5040498-12'
 
 # = Jekyll (Default) Settings:
 source:      .

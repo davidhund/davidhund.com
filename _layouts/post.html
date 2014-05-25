@@ -10,6 +10,10 @@
 						<span class="post-author" rel="contact author">{% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif %}</span>
 					</p>
 					{{content}}
+
+					<hr/>
+					{% include disqus.html %}
+
 				</main>
 				<div class="grid__unit l-secondary l-secondary--shade">
 				{% if page.aside %}
