@@ -6,7 +6,10 @@ summary:
 category: Github, Jekyll
 ---
 
+https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages
+
 http://subosito.com/fix-302-redirect-response-for-github-hosted-site
+
 http://stackoverflow.com/questions/20885695/why-is-my-github-hosted-site-responding-with-http-302-instead-of-200
 https://developers.facebook.com/tools/debug/og/object?q=http%3A%2F%2Fdavidhund.com%2F
 
